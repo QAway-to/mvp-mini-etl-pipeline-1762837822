@@ -1,0 +1,15 @@
+{
+  "pipeline": ["extract", "transform", "load"],
+  "metrics": {
+    "rows_in": 1240,
+    "rows_out": 1210,
+    "dedup_removed": 30,
+    "duration_sec": 95
+  },
+  "logs": [
+    "2025-11-11T09:00:00Z | Extract | Pulled 1 240 rows from CRM export",
+    "2025-11-11T09:00:17Z | Transform | Applied cleansing rules + dedup",
+    "2025-11-11T09:01:35Z | Load | Saved 1 210 rows into analytics DB"
+  ]
+}
+
